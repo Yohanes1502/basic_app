@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailProduct"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    >
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/detailpembangunan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:transitionName="transisi_pembangunan"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="4dp"
+                app:cardCornerRadius="8dp"
+                android:layout_margin="12dp"
+                app:cardBackgroundColor="#ffffff"
+
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="12dp"
+                    >
+                    <LinearLayout
+                        android:layout_marginTop="12dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+                        <ImageView
+                            android:layout_marginStart="12dp"
+                            android:layout_marginEnd="4dp"
+                            android:layout_width="5dp"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/bg_style2"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            >
+
+                            <TextView
+                                android:id="@+id/name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="12dp"
+                                android:text=""
+                                android:textColor="#000"
+                                android:textStyle="bold"
+                                android:textSize="22sp"
+                                android:fontFamily="@font/montserrat_bold"
+                                />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <ImageView
+                        android:id="@+id/gambar"
+                        android:layout_margin="12dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:src="@drawable/preview1"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop"
+                        />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        >
+
+                        <TextView
+                            android:id="@+id/price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginStart="12dp"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:text="RP.10.000"
+                            android:textColor="#000"
+                            android:textSize="22sp"
+                            android:textStyle="bold"
+                            />
+                        <TextView
+                            android:id="@+id/rating"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="12dp"
+                            android:textColor="#000"
+                            android:textSize="18sp"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:text="Rating : 5"
+                            android:layout_alignParentEnd="true"
+                            />
+                    </RelativeLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <EditText
+                android:id="@+id/quantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginTop="40dp"
+                android:hint="Input Quantity"
+                android:textColor="#000"
+                android:textSize="18sp"
+                />
+
+            <Button
+                android:id="@+id/btnbuy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="BUY FURNITURE"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</RelativeLayout>
